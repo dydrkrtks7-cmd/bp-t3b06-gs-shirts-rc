@@ -1,637 +1,130 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko" data-theme="neon" data-build="a1b2c3d4">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강서 셔츠룸 추천 | 압도적 분위기 t3b06-gs-shirts-rc | neon-void</title>
-    <meta name="description" content="강서 셔츠룸 추천, 진짜 분위기 있는 곳. 내 눈으로 직접 확인한 강서 셔츠룸만 소개. 010-6279-0862 전화 한 통이면 끝. t3b06-gs-shirts-rc.vercel.app">
-    <meta name="keywords" content="강서셔츠룸, 강서 셔츠룸 추천, 강서구셔츠룸, 셔츠룸, 강서, t3b06">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://t3b06-gs-shirts-rc.vercel.app/">
-
-    <!-- OG 메타 + Twitter Card -->
-    <meta property="og:title" content="강서 셔츠룸 추천 | 압도적 분위기">
-    <meta property="og:description" content="강서 셔츠룸 추천, 진짜 분위기 있는 곳. 내 눈으로 직접 확인한 강서 셔츠룸만 소개. 010-6279-0862">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-gs-shirts-rc.vercel.app/">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="강서셔츠룸추천">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="강서 셔츠룸 추천 | 압도적 분위기">
-    <meta name="twitter:description" content="강서 셔츠룸 추천, 내 눈으로 확인한 곳만. 010-6279-0862">
-
-    <!-- JSON-LD 스키마 (LocalBusiness) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "강서셔츠룸추천",
-        "description": "강서 지역 셔츠룸 추천 정보. 분위기, 가격, 위치 모두 꼼꼼히 확인했어요.",
-        "url": "https://t3b06-gs-shirts-rc.vercel.app/",
-        "telephone": "+82-10-6279-0862",
-        "areaServed": "강서구, 서울특별시",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "서울특별시 강서구",
-            "addressCountry": "KR"
-        }
-    }
-    </script>
-
-    <style>
-        /* --- RESET & BASE (brutalist raw) --- */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            background: #000000;
-            color: #ffffff;
-            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
-            line-height: 1.2;
-            letter-spacing: 0.01em;
-            padding: 0;
-            margin: 0;
-            overflow-x: hidden;
-        }
-
-        /* --- TYPOGRAPHY (oversized, raw) --- */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: #ffffff;
-        }
-
-        h1 {
-            font-size: clamp(3.4rem, 12vw, 6rem);
-            line-height: 0.9;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.2em;
-            border-left: 6px solid #ff3b00;
-            padding-left: 24px;
-        }
-
-        h2 {
-            font-size: clamp(2.6rem, 8vw, 4.2rem);
-            margin-bottom: 24px;
-            border-bottom: 4px solid #ff3b00;
-            display: inline-block;
-            padding-bottom: 8px;
-        }
-
-        h3 {
-            font-size: clamp(1.6rem, 4vw, 2.4rem);
-            margin-bottom: 16px;
-        }
-
-        p, li, blockquote, figcaption, a, span, div {
-            font-family: 'Courier New', 'Courier', system-ui, monospace;
-            font-weight: 400;
-        }
-
-        a {
-            color: #ff3b00;
-            text-decoration: underline dashed 2px;
-            transition: all 0.1s ease;
-        }
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline solid 3px #ff3b00;
-            background: #ff3b00;
-            padding: 0 4px;
-        }
-
-        /* --- LAYOUT (asymmetric, full bleed, airy)--- */
-        header, nav, main, section, footer {
-            width: 100%;
-            max-width: none;
-            padding-left: 72px;
-            padding-right: 72px;
-        }
-
-        section {
-            margin-top: 120px;
-            margin-bottom: 120px;
-            padding-top: 72px;
-            padding-bottom: 72px;
-            position: relative;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        /* --- BORDERS & TEXTURES (brutalist) --- */
-        .brutal-box {
-            border: 4px solid #ffffff;
-            padding: 32px;
-            background: #000000;
-            position: relative;
-            box-shadow: 8px 8px 0 #ff3b00;
-            transition: all 0.15s ease;
-        }
-        .brutal-box:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 12px 12px 0 #ff3b00;
-        }
-
-        .skew-block {
-            transform: skewX(-3deg);
-            border: 4px solid #ff3b00;
-            padding: 48px 72px;
-            background: #111111;
-            margin: 48px 0;
-        }
-        .skew-block > * {
-            transform: skewX(3deg);
-        }
-
-        /* --- COLORS (neon-void) --- */
-        .accent-bg {
-            background: #ff3b00;
-            color: #000000;
-        }
-        .accent-border {
-            border-color: #ff3b00;
-        }
-        .accent-text {
-            color: #ff3b00;
-        }
-        .invert {
-            background: #ffffff;
-            color: #000000;
-        }
-
-        /* --- HEADER & NAVIGATION --- */
-        header {
-            padding-top: 32px;
-            padding-bottom: 16px;
-            border-bottom: 4px solid #ff3b00;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background: #000000;
-            gap: 24px;
-        }
-
-        .logo-area {
-            display: flex;
-            align-items: baseline;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-        .logo-area .logo {
-            font-size: 2.2rem;
-            font-family: Impact, 'Arial Black', sans-serif;
-            color: #ffffff;
-            letter-spacing: 2px;
-            border: 3px solid #ff3b00;
-            padding: 8px 16px;
-            background: #000000;
-        }
-        .logo-area .tagline {
-            font-size: 1.2rem;
-            color: #ff3b00;
-            border-left: 3px solid #ffffff;
-            padding-left: 16px;
-        }
-
-        .nav-desktop {
-            display: flex;
-            gap: 48px;
-            list-style: none;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-        }
-        .nav-desktop li a {
-            color: #ffffff;
-            text-decoration: none;
-            border-bottom: 3px solid transparent;
-            padding-bottom: 4px;
-        }
-        .nav-desktop li a:hover {
-            border-bottom-color: #ff3b00;
-            background: transparent;
-            color: #ff3b00;
-        }
-
-        /* 햄버거 모바일 */
-        .hamburger-checkbox {
-            display: none;
-        }
-        .hamburger-label {
-            display: none;
-            font-size: 2.8rem;
-            color: #ffffff;
-            cursor: pointer;
-            border: 3px solid #ff3b00;
-            padding: 4px 16px;
-            line-height: 1;
-            user-select: none;
-        }
-        .mobile-nav {
-            display: none;
-            width: 100%;
-            background: #111111;
-            border: 4px solid #ff3b00;
-            padding: 32px 24px;
-            margin-top: 16px;
-        }
-        .mobile-nav ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-        .mobile-nav ul li a {
-            font-size: 1.8rem;
-            color: #ffffff;
-            border-left: 6px solid #ff3b00;
-            padding-left: 16px;
-        }
-
-        /* --- HERO (asymmetric brutal) --- */
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 48px;
-            padding: 72px 0;
-            margin-top: 40px;
-            background: repeating-linear-gradient(45deg, #000000, #000000 20px, #0a0a0a 20px, #0a0a0a 40px);
-            border-bottom: 6px solid #ff3b00;
-            border-top: 6px solid #ff3b00;
-            position: relative;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            width: 120px;
-            height: 120px;
-            background: #ff3b00;
-            opacity: 0.2;
-            z-index: 0;
-        }
-        .hero-text {
-            flex: 1 1 400px;
-            z-index: 1;
-        }
-        .hero-visual {
-            flex: 1 1 300px;
-            background: #ff3b00;
-            min-height: 320px;
-            border: 6px solid #ffffff;
-            transform: rotate(2deg) skewX(-3deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            background-image: radial-gradient(circle at 20% 30%, #ff3b00 0%, #000000 80%);
-            box-shadow: -12px 12px 0 #ffffff;
-        }
-        .hero-visual span {
-            mix-blend-mode: difference;
-            font-size: 8rem;
-            line-height: 1;
-        }
-
-        .hero .cta-button {
-            display: inline-block;
-            background: #ff3b00;
-            color: #000000;
-            font-size: 2rem;
-            padding: 24px 48px;
-            font-family: Impact, sans-serif;
-            border: 4px solid #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-top: 32px;
-            transition: 0.1s ease;
-            box-shadow: 6px 6px 0 #ffffff;
-        }
-        .hero .cta-button:hover {
-            background: #ffffff;
-            color: #000000;
-            box-shadow: 10px 10px 0 #ff3b00;
-            transform: translate(-4px, -4px);
-        }
-
-        /* --- REVIEW CARDS (UGC) --- */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 48px;
-            margin-top: 48px;
-        }
-        .review-card {
-            border: 4px solid #ffffff;
-            padding: 32px 24px;
-            background: #0a0a0a;
-            position: relative;
-            transform: rotate(-0.5deg);
-        }
-        .review-card:nth-child(odd) {
-            transform: rotate(1deg);
-            border-color: #ff3b00;
-        }
-        .review-card .stars {
-            font-size: 2rem;
-            letter-spacing: 4px;
-            color: #ff3b00;
-            margin-bottom: 12px;
-        }
-        .review-card .meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            border-top: 2px dashed #ffffff;
-            padding-top: 16px;
-            margin-top: 24px;
-            color: #aaaaaa;
-        }
-        .review-card .nick {
-            font-weight: bold;
-            color: #ffffff;
-        }
-        .review-card blockquote {
-            font-size: 1.3rem;
-            line-height: 1.4;
-            margin: 16px 0;
-            border-left: 4px solid #ff3b00;
-            padding-left: 16px;
-        }
-
-        /* --- TEL LINK (prominent) --- */
-        .tel-block {
-            background: #ff3b00;
-            padding: 32px 48px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-            border: 4px solid #ffffff;
-            margin: 48px 0;
-            font-size: 2rem;
-            color: #000000;
-        }
-        .tel-block a {
-            font-size: 2.8rem;
-            color: #000000;
-            background: #ffffff;
-            padding: 12px 48px;
-            text-decoration: none;
-            border: 4px solid #000000;
-            font-family: Impact, sans-serif;
-            transition: 0.1s;
-        }
-        .tel-block a:hover {
-            background: #000000;
-            color: #ffffff;
-            border-color: #ffffff;
-        }
-
-        /* --- FOOTER --- */
-        footer {
-            border-top: 6px solid #ff3b00;
-            padding: 72px 72px 48px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 32px;
-            background: #0a0a0a;
-        }
-        footer .copy {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
-        footer .footer-links a {
-            margin-left: 32px;
-            font-size: 1.1rem;
-        }
-
-        /* --- RESPONSIVE (max-width:768px) --- */
-        @media (max-width: 768px) {
-            header, nav, main, section, footer {
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-            section {
-                padding-top: 48px;
-                padding-bottom: 48px;
-                margin-top: 60px;
-                margin-bottom: 60px;
-            }
-            .nav-desktop {
-                display: none;
-            }
-            .hamburger-label {
-                display: inline-block;
-            }
-            .hamburger-checkbox:checked ~ .mobile-nav {
-                display: block;
-            }
-            .hero {
-                flex-direction: column;
-                padding: 48px 0;
-            }
-            .hero-visual {
-                min-height: 200px;
-                font-size: 3rem;
-                width: 100%;
-            }
-            .hero .cta-button {
-                font-size: 1.4rem;
-                padding: 16px 32px;
-            }
-            .tel-block {
-                flex-direction: column;
-                text-align: center;
-                font-size: 1.4rem;
-                padding: 24px;
-            }
-            .tel-block a {
-                font-size: 2rem;
-                padding: 12px 24px;
-            }
-            h1 {
-                font-size: 2.8rem;
-                padding-left: 16px;
-            }
-            .brutal-box {
-                padding: 20px;
-            }
-            .skew-block {
-                padding: 24px 32px;
-                transform: skewX(-2deg);
-            }
-            .skew-block > * {
-                transform: skewX(2deg);
-            }
-            footer {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 48px 24px 32px;
-            }
-            footer .footer-links a {
-                margin-left: 0;
-                margin-right: 24px;
-                display: inline-block;
-            }
-        }
-
-        /* extra brutal touches */
-        .glitch-bg {
-            background: repeating-linear-gradient(90deg, #000000 0px, #000000 4px, #ff3b00 4px, #ff3b00 8px);
-            background-size: 8px 100%;
-        }
-        .pseudo-underline {
-            text-decoration: underline wavy #ff3b00 3px;
-        }
-        hr {
-            border: none;
-            border-top: 8px dotted #ff3b00;
-            margin: 72px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>강서 셔츠룸 정보 — 상세 가이드와 지역 시그널</title>
+  <meta name="description" content="강서 지역 셔츠룸을 찾는 당신을 위해 상세 정보와 상황별 선택 포인트, 안전·편의 체크리스트, 주변 시그널을 정리했습니다.">
+  <meta name="keywords" content="강서 셔츠룸, 강서 셔츠룸 정보, 셔츠룸 상세 안내, 강서 밤문화, 셔츠룸 체크리스트">
+  <link rel="canonical" href="https://gangseo-shirt-zone.hardcoreroom.com/about.html">
+  <meta name="generator" content="custom-cms-7f9b">
+  <meta property="og:title" content="강서 셔츠룸 정보 — 상세 가이드와 지역 시그널">
+  <meta property="og:description" content="강서 지역 셔츠룸을 찾는 당신을 위해 상세 정보와 상황별 선택 포인트, 안전·편의 체크리스트, 주변 시그널을 정리했습니다.">
+  <meta property="og:url" content="https://gangseo-shirt-zone.hardcoreroom.com/about.html">
 </head>
 <body>
-
-<header>
-    <div class="logo-area">
-        <span class="logo">🔥 강서셔츠룸</span>
-        <span class="tagline">#추천 #t3b06</span>
+  <header class="header">
+    <div class="container">
+      <h1 class="hero">강서 셔츠룸 정보</h1>
+      <p class="hero-sub">여러 상황에 맞는 최적 선택을 도와드려요.</p>
     </div>
-
-    <input type="checkbox" id="hamburger" class="hamburger-checkbox">
-    <label for="hamburger" class="hamburger-label">☰</label>
-
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="#info">정보</a></li>
-            <li><a href="#review">리뷰</a></li>
-            <li><a href="#contact">연락</a></li>
-        </ul>
+    <nav class="nav">
+      <ul>
+        <li><a href="/overview">개요</a></li>
+        <li><a href="/recommend">추천 가이드</a></li>
+        <li><a href="/info">상세 정보</a></li>
+        <li><a href="/contact">문의</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <nav>
-        <ul class="nav-desktop">
-            <li><a href="#info">정보</a></li>
-            <li><a href="#review">리뷰</a></li>
-            <li><a href="#contact">연락</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <!-- HERO -->
-    <section class="hero container" id="info">
-        <div class="hero-text">
-            <h1>강서 셔츠룸<br>추천 끝판왕</h1>
-            <p style="font-size:1.8rem; margin-bottom:32px; color:#ff3b00; border-left:4px solid white; padding-left:20px;">
-                내가 진짜 가본 곳만<br>담았다. 거짓말 안 함.
-            </p>
-            <a href="tel:01062790862" class="cta-button">📞 바로 전화</a>
-        </div>
-        <div class="hero-visual">
-            <span>👔🔥</span>
-        </div>
+  <main class="main">
+    <!-- 기본 개요 -->
+    <section class="section">
+      <div class="container">
+        <h2>강서 셔츠룸, 왜 선택해야 할까?</h2>
+        <p>강서구는 지하철 9호선과 2호선이 교차하는 교통 요지라 접근성이 뛰어납니다. 특히 밤늦은 시간에도 대중교통을 이용해 안전하게 이동할 수 있어, 새벽까지 이용하려는 고객에게 큰 장점이 됩니다.</p>
+        <p>다양한 분위기의 실내와 최신 방음 설비를 갖춘 셔츠룸이 늘어나면서, 개인적인 시간부터 소규모 파티까지 다양한 목적에 맞춰 활용할 수 있습니다. 주변에 다양한 음식점과 카페가 밀집해 있어, 이용 전후에 가볍게 식사하거나 음료를 즐길 수 있는 편리함도 놓칠 수 없죠.</p>
+      </div>
     </section>
 
-    <!-- detail info section (asymmetric brutal) -->
-    <section class="container">
-        <div class="skew-block">
-            <h2 style="margin-top:0; border-bottom:6px solid white;">📍 강서구 셔츠룸<br>왜 여길 추천하냐면</h2>
-            <p style="font-size:1.6rem; margin-bottom:24px;">형, 강서에서 셔츠룸 찾고 있지? 내가 직접 발로 뛰었다. 분위기, 가격, 서비스 딱 정리해줌.</p>
-            <div style="display:flex; flex-wrap:wrap; gap:24px 48px; font-size:1.3rem;">
-                <span>🔴 위치: 깔끔</span>
-                <span>🔴 룸 컨디션: A+</span>
-                <span>🔴 가격: 합리적</span>
-                <span>🔴 노하우: 多</span>
-            </div>
-        </div>
+    <!-- 상황별 선택 포인트 -->
+    <section class="section">
+      <div class="container">
+        <h2>상황별 선택 포인트</h2>
+
+        <h3>1️⃣ 인원 규모에 맞는 공간 고르기</h3>
+        <p>2~4명 소규모 모임이라면 1인실이 가장 프라이버시를 보장합니다. 반면 5~8명 정도가 함께 이용한다면 2인실 혹은 라운지형 오픈룸을 선택해 대화를 원활히 이어갈 수 있습니다.</p>
+        <p>대규모 파티(10명 이상)를 계획한다면 복합형 프라이빗룸을 예약하고, 사전 현장 답사를 통해 방음 상태와 좌석 배치를 확인하는 것이 좋습니다.</p>
+
+        <h3>2️⃣ 이용 시점에 따른 분위기 선택</h3>
+        <p>평일 저녁(18~22시)에는 비교적 조용하고 차분한 분위기의 라운지가 인기가 많습니다. 이때는 알코올 서비스가 제한된 공간이 많아, 식음료 선택에 유의하세요.</p>
+        <p>주말이나 행사 시즌(새해, 할로윈 등)에는 파티 분위기가 강조된 테마룸이 많이 운영됩니다. 사전 예약이 필수이며, 추가 비용이 발생할 수 있음을 참고하세요.</p>
+
+        <h3>3️⃣ 이용 목적에 맞는 부대서비스 확인</h3>
+        <p>‘혼자서 음악 감상’이 목적이라면 고음질 사운드 시스템과 조명 옵션이 자유로운 방을, ‘친구와 게임 파티’라면 대형 TV와 게임 콘솔이 구비된 방을 선택하면 만족도가 높아집니다.</p>
+        <p>‘비즈니스 네트워킹’·‘소규모 회의’를 원한다면 와이파이 속도와 전원 콘센트 수, 화이트보드 유무를 체크하는 것이 중요합니다.</p>
+      </div>
     </section>
 
-    <!-- 전화 블록 (prominent) -->
-    <div class="container tel-block" id="contact">
-        <span>📞 지금 전화하면?</span>
-        <a href="tel:01062790862">010-6279-0862</a>
+    <!-- 안전·편의 체크리스트 -->
+    <section class="section">
+      <div class="container">
+        <h2>안전·편의 체크리스트</h2>
+        <p>예약 전 반드시 확인해야 할 5가지 핵심 항목을 정리했습니다. 작은 실수 하나가 전체 경험을 좌우할 수 있으니, 체크리스트를 활용해 미리 점검해 보세요.</p>
+
+        <ul class="x-grid-cqjt">
+          <li>🔐 출입 보안: QR코드 혹은 키패드 방식인지 확인하고, 비밀번호 변경 주기가 있는지 물어보세요.</li>
+          <li>🧹 청결 상태: 바닥·화장실·휴게실 청소 여부와 관리 주기를 직접 확인하고, 고객 리뷰를 참고하세요.</li>
+          <li>💡 조명·음향: 조명 색 온도와 음량 조절이 가능한지, 방음 설비가 최신인지 확인합니다.</li>
+          <li>🚿 편의 시설: 샤워실·세면대·드라이어 등 기본 편의 시설이 구비돼 있는지 체크합니다.</li>
+          <li>📶 인터넷 연결: 와이파이 속도와 신호 강도를 테스트해 업무용·스트리밍용으로 충분한지 확인합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 지역 시그널 -->
+    <section class="section">
+      <div class="container">
+        <h2>강서구 지역 시그널</h2>
+        <p>셰프톤, 마곡, 방화 등 인근 지역과의 연계성을 고려하면 이동 경로와 주변 편의시설을 미리 파악하는 것이 도움이 됩니다.</p>
+
+        <h3>교통 접근성</h3>
+        <p>김포공항역·송정역·화곡역 등 주요 역세권이 10분 이내에 위치해 있어, 대중교통으로도 손쉽게 이동할 수 있습니다. 특히 택시 호출이 빈번한 지역이므로, 늦은 시간에도 안전하게 귀가할 수 있습니다.</p>
+
+        <h3>주변 편의시설</h3>
+        <p>셰프톤 복합문화공간, 마곡 고기집·와인바, 방화 고속버스 터미널 등 다양한 식음료 및 엔터테인먼트 시설이 인접해 있어, 이용 전후에 가벼운 식사나 음료를 즐기기에 최적입니다.</p>
+
+        <h3>치안·안전</h3>
+        <p>강서구는 경찰서·소방서가 여러 곳에 배치돼 있어, 긴급 상황 시 빠른 대응이 가능합니다. 특히 밤 시간대에는 조명과 CCTV가 잘 설치돼 있어, 상대적으로 안전한 편이라고 평가됩니다.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <dl>
+          <dt>Q1. 예약 취소는 언제까지 가능한가요?</dt>
+          <dd>대부분의 셔츠룸은 이용 전 24시간 이내에 무료 취소가 가능합니다. 다만, 이벤트·프로모션 기간에는 취소 정책이 다를 수 있으니 사전 확인이 필요합니다.</dd>
+
+          <dt>Q2. 신용카드 결제 외에 현금 결제가 가능한가요?</dt>
+          <dd>주요 셔츠룸은 신용카드·계좌이체·모바일 결제 모두 지원하지만, 일부 소규모 실내는 현금 전용일 수 있습니다. 예약 페이지에 결제 수단을 명시해 두니 참고하세요.</dd>
+
+          <dt>Q3. 알코올 서비스가 가능한 방은 어떻게 확인하나요?</dt>
+          <dd>서비스 안내 페이지에 ‘주류 제공’ 아이콘이 표시된 방을 확인하거나, 사전 전화 문의 시 정확한 제공 여부와 별도 요금을 물어보면 됩니다.</dd>
+
+          <dt>Q4. 장애인 이용이 가능한 방이 있나요?</dt>
+          <dd>대부분의 대형 셔츠룸은 휠체어 접근이 가능한 입구와 화장실을 갖추고 있습니다. 장애인 전용 라운지가 별도로 마련된 경우도 있으니, 예약 시 특수 요구 사항을 알려 주세요.</dd>
+
+          <dt>Q5. 사전 현장 방문은 가능한가요?</dt>
+          <dd>예약 전 현장 답사는 매우 권장됩니다. 대부분은 사전 예약을 통해 30분 정도의 투어를 제공하며, 이때 방음·조명·위생 상태를 직접 확인할 수 있습니다.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container t-wrap-zfyk">
+        <a href="/recommend" class="t-btn-o9q7">다른 상황에 맞는 셔츠룸 추천 보기</a>
+        <a href="/contact" class="t-btn-o9q7">문의·예약하기</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 강서 셔츠룸 가이드. All rights reserved.</p>
     </div>
-
-    <!-- UGC 리뷰 섹션 -->
-    <section class="container" id="review">
-        <h2>⭐️ 진짜 후기<br>거짓말 안 해</h2>
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <blockquote>“강서에서 이렇게 분위기 좋은 데 처음. 셔츠룸 거품 많다 생각했는데 여긴 다르네. 추천함”</blockquote>
-                <div class="meta">
-                    <span class="nick">🔥 불꽃남자</span>
-                    <span>2025-03-21</span>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★☆</div>
-                <blockquote>“두 번째 방문. 매니저님들 센스 좋고 룸이 널찍. 가격도 부담 없고. 별 하나 뺀 건 주차가 약간 빡셈”</blockquote>
-                <div class="meta">
-                    <span class="nick">🍺 맥주한잔</span>
-                    <span>2025-03-14</span>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <blockquote>“친구 추천으로 갔는데 완전 만족. 인테리어부터 음악까지 취향 저격. 또 갈 예정”</blockquote>
-                <div class="meta">
-                    <span class="nick">🎧 바이브킹</span>
-                    <span>2025-02-28</span>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <blockquote>“강서 셔츠룸 추천 검색하다 여기 알게 됐다. 직접 가보니 후기 거짓말 아니더라. 강추”</blockquote>
-                <div class="meta">
-                    <span class="nick">👔 셔츠마니아</span>
-                    <span>2025-02-10</span>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★☆</div>
-                <blockquote>“첫 방문인데 나쁘지 않았음. 서비스 좋고 분위기 좋고. 다음엔 친구들 데려올게”</blockquote>
-                <div class="meta">
-                    <span class="nick">🤙 강서오빠</span>
-                    <span>2025-01-27</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 추가 정보 (asymmetric blocks) -->
-    <section class="container">
-        <div style="display:flex; flex-wrap:wrap; gap:48px; align-items:flex-start;">
-            <div class="brutal-box" style="flex:1; min-width:260px;">
-                <h3 style="color:#ff3b00;">🍸 시그니처</h3>
-                <p style="font-size:1.4rem;">칵테일 & 위스키 바<br>셔츠룸 + 바 1석2조</p>
-            </div>
-            <div class="brutal-box" style="flex:1; min-width:260px; transform:rotate(1deg);">
-                <h3 style="color:#ff3b00;">🎤 프라이빗</h3>
-                <p style="font-size:1.4rem;">노래방 시스템 완비<br>소리 질
+  </footer>
 </body>
 </html>
